@@ -1,0 +1,385 @@
+/* ─── HRMS Design System ─── */
+
+:root {
+  --hrms-sidebar-bg:     #1e1e2e;
+  --hrms-sidebar-text:   #c8c8d8;
+  --hrms-sidebar-active: #2e2e4a;
+  --hrms-content-bg:     #f0ede8;
+  --hrms-card-bg:        #ffffff;
+  --hrms-primary:        #4a6fa5;
+  --hrms-danger:         #d32f2f;
+  --hrms-success:        #5a8a6a;
+  --hrms-teal:           #6b9e7b;
+  --hrms-border:         #e0dbd5;
+  --hrms-text:           #1a1a2a;
+  --hrms-muted:          #757575;
+}
+
+/* ─── AppLayout Shell ─── */
+dwc-app-layout {
+  --dwc-app-layout-header-height: 60px;
+}
+
+/* ─── Login Page ─── */
+.login-page {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--hrms-content-bg);
+}
+
+.login-card {
+  background: var(--hrms-card-bg);
+  border-radius: 12px;
+  padding: 40px 48px;
+  min-width: 380px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-company {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--hrms-text);
+  letter-spacing: 0.01em;
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--hrms-text);
+  margin: 0;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--hrms-muted);
+}
+
+.login-field {
+  width: 100%;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* ─── Sidebar ─── */
+.sidebar {
+  background: var(--hrms-sidebar-bg);
+  width: 220px;
+  height: 100%;
+  padding: 0;
+}
+
+.sidebar-logo-area {
+  padding: 20px 16px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.sidebar-logo {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+.sidebar-nav {
+  padding: 12px 0;
+}
+
+.nav-btn {
+  display: block;
+  width: 100%;
+}
+
+.nav-btn::part(button) {
+  background: transparent;
+  color: var(--hrms-sidebar-text);
+  border: none;
+  border-radius: 0;
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.15s;
+  text-align: left;
+  justify-content: flex-start;
+  box-shadow: none;
+  width: 100%;
+}
+
+.nav-btn:hover::part(button) {
+  background: rgba(255,255,255,0.06);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.nav-btn-active::part(button) {
+  background: var(--hrms-sidebar-active);
+  color: #ffffff;
+  border-left: 3px solid var(--hrms-primary);
+  box-shadow: none;
+}
+
+.sidebar-logout {
+  margin: 16px;
+  width: calc(100% - 32px);
+}
+
+/* ─── Header / Toolbar ─── */
+.hrms-toolbar {
+  background: var(--hrms-card-bg);
+  border-bottom: 1px solid var(--hrms-border);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.header-company {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--hrms-text);
+  margin: 0;
+}
+
+.header-user-area {
+  gap: 12px;
+}
+
+.header-user-info {
+  text-align: right;
+  gap: 2px;
+}
+
+.header-user-name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--hrms-text);
+}
+
+.header-page-label {
+  font-size: 0.75rem;
+  color: var(--hrms-primary);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.header-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--hrms-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ─── Content area background ─── */
+dwc-app-layout::part(content) {
+  background: var(--hrms-content-bg);
+}
+
+/* ─── Page common ─── */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--hrms-text);
+  margin: 0 0 8px 0;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--hrms-text);
+  margin-bottom: 4px;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--hrms-text);
+  margin: 0 0 4px 0;
+}
+
+/* ─── Dashboard stat cards ─── */
+.stat-card {
+  background: var(--hrms-card-bg);
+  border-radius: 8px;
+  padding: 20px 24px;
+  flex: 1;
+  min-width: 240px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid var(--hrms-border);
+}
+
+.stat-card-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--hrms-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.btn-checkin {
+  background: var(--hrms-teal) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 6px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.progress-bar-track {
+  background: #e8e4df;
+  border-radius: 4px;
+  height: 8px;
+  width: 100%;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: var(--hrms-primary);
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* ─── Notifications ─── */
+.notifications-section {
+  background: var(--hrms-card-bg);
+  border-radius: 8px;
+  padding: 20px 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid var(--hrms-border);
+}
+
+.notification-list {
+  gap: 0;
+}
+
+.notification-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hrms-border);
+  gap: 4px;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-message {
+  font-size: 0.875rem;
+  color: var(--hrms-primary);
+  cursor: pointer;
+}
+
+.notification-message:hover {
+  text-decoration: underline;
+}
+
+.notification-time {
+  font-size: 0.78rem;
+  color: var(--hrms-muted);
+}
+
+/* ─── Form card (Leaves, Settings) ─── */
+.form-card {
+  background: var(--hrms-card-bg);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid var(--hrms-border);
+}
+
+.submit-btn {
+  min-width: 160px;
+}
+
+/* ─── Profile card ─── */
+.profile-card {
+  background: var(--hrms-card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  border: 1px solid var(--hrms-border);
+}
+
+.profile-card-header {
+  background: linear-gradient(135deg, #5c6bc0, #7e57c2);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 14px 24px;
+}
+
+.profile-card-body {
+  padding: 24px;
+}
+
+.profile-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: #b0bec5;
+  border: 2px solid #cfd8dc;
+}
+
+.role-badge {
+  background: #e3f2fd;
+  color: #1565c0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.04em;
+}
+
+.edit-link {
+  color: var(--hrms-primary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  min-width: 32px;
+  text-align: right;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+}
+
+/* ─── Settings summary ─── */
+.summary-label {
+  color: var(--hrms-primary);
+  font-size: 0.9rem;
+}
+
+.summary-value {
+  color: var(--hrms-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.present-badge {
+  background: var(--hrms-teal);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  letter-spacing: 0.04em;
+}
+
+.summary-box {
+  border: 1px solid var(--hrms-border);
+  border-radius: 8px;
+  padding: 16px 32px;
+  min-width: 100px;
+  gap: 4px;
+}
