@@ -35,6 +35,10 @@ The app starts on [http://localhost:8080](http://localhost:8080).
 | Username | `admin`  |
 | Password | `password` |
 
+## Reference
+
+This project was built using [Howdy](https://github.com/StephanWald/Howdy) as a reference repository.
+
 ## Tech Stack
 
 | Layer     | Technology              |
