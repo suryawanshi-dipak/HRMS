@@ -1,6 +1,6 @@
 # HRMS — Human Resource Management System
 
-A web-based HRMS application built with the [WebforJ](https://webforj.com) framework in Java. Designed for Vivekanand Technologies, it provides HR workflows for employees, managers, and admins from a single interface.
+A web-based HRMS application built with the [WebforJ](https://webforj.com) framework in Java. Developed for learning, it provides HR workflows for employees, managers, and admins from a single interface.
 
 ## Features
 
