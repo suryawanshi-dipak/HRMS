@@ -35,6 +35,16 @@ The app starts on [http://localhost:8080](http://localhost:8080).
 | Username | `admin`  |
 | Password | `password` |
 
+## Screenshots
+
+| Login | Dashboard |
+|-------|-----------|
+| ![Login](src/main/resources/icons/login.png) | ![Dashboard](src/main/resources/icons/Dashboard.png) |
+
+| Leaves | Settings |
+|--------|----------|
+| ![Leaves](src/main/resources/icons/Leaves.png) | ![Settings](src/main/resources/icons/Settings.png) |
+
 ## Reference
 
 This project was built using [Howdy](https://github.com/StephanWald/Howdy) as a reference repository.
