@@ -45,9 +45,6 @@ The app starts on [http://localhost:8080](http://localhost:8080).
 |--------|----------|
 | ![Leaves](src/main/resources/icons/Leaves.png) | ![Settings](src/main/resources/icons/Settings.png) |
 
-## Reference
-
-This project was built using [Howdy](https://github.com/StephanWald/Howdy) as a reference repository.
 
 ## Tech Stack
 
@@ -73,3 +70,8 @@ src/main/java/com/webforj/hrms/
     ├── ReportsView.java      # Reporting
     └── SettingsView.java     # Settings
 ```
+
+## Reference
+ 
+- WebforJ Docs: [https://webforj.com](https://webforj.com)
+- Reference repo: [Howdy](https://github.com/StephanWald/Howdy)
